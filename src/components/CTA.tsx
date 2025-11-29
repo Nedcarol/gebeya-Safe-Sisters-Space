@@ -2,8 +2,15 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield, Sparkles } from "lucide-react";
 
 const CTA = () => {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section id="cta" className="py-16 sm:py-24 relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 gradient-bg opacity-95" />
       
@@ -19,31 +26,33 @@ const CTA = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-3xl mx-auto text-center">
           {/* Icon */}
-          <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-white/10 backdrop-blur-sm mb-8">
-            <Shield className="w-10 h-10 text-white" />
+          <div className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white/10 backdrop-blur-sm mb-6 sm:mb-8">
+            <Shield className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
           </div>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-white mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold text-white mb-4 sm:mb-6">
             Start Protecting Yourself Today
           </h2>
 
-          <p className="text-lg sm:text-xl text-white/80 mb-10 text-balance">
+          <p className="text-base sm:text-lg md:text-xl text-white/80 mb-8 sm:mb-10 text-balance px-4">
             Join thousands of women and girls taking control of their digital safety. 
             Free, private, and powered by AI.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 px-4">
             <Button 
-              size="xl" 
+              size="lg" 
               className="w-full sm:w-auto bg-white text-foreground hover:bg-white/90 hover:scale-105 font-bold shadow-lg group"
+              onClick={() => scrollToSection("demo")}
             >
-              Create Free Account
+              Try It Now - Free
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button 
               variant="outline" 
-              size="xl" 
+              size="lg" 
               className="w-full sm:w-auto border-2 border-white/30 bg-white/10 text-white hover:bg-white/20 hover:border-white/50 backdrop-blur-sm"
+              onClick={() => scrollToSection("features")}
             >
               <Sparkles className="w-5 h-5" />
               Explore Features
@@ -51,7 +60,7 @@ const CTA = () => {
           </div>
 
           {/* Trust Badge */}
-          <p className="mt-8 text-sm text-white/60 flex items-center justify-center gap-2">
+          <p className="mt-6 sm:mt-8 text-xs sm:text-sm text-white/60 flex items-center justify-center gap-2">
             <Shield className="w-4 h-4" />
             Your messages are never stored. Complete privacy guaranteed.
           </p>
