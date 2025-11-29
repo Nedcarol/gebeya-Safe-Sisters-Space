@@ -184,8 +184,3 @@ This project is open source and available under the MIT License.
 Built for the **16 Days of Activism Against Gender-Based Violence** campaign. Safe-Space Sisters is dedicated to empowering women and girls to reclaim their voices online and build safer digital spaces.
 
 ---
-
-**For more information, see [PITCH.md](./PITCH.md) for the full demo script and project overview.**
-
-**View the wireframe [here](https://app.visily.ai/projects/62ad83db-c2f3-4068-8fb9-d65e36b406f6/boards/2361343) **
-
