@@ -163,6 +163,10 @@ We welcome contributions! Please:
 
 ---
 
+## Pitch Deck
+
+[Project Pitch Deck](https://www.canva.com/design/DAG5-l4rTLo/VXsCgVL4Zbb46KwbBaeOAw/edit?utm_content=DAG5-l4rTLo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
 ## 📞 Support & Resources
 
 - **Report Issues**: [GitHub Issues](https://github.com/Nedcarol/gebeya-Safe-Sisters-Space/issues)
